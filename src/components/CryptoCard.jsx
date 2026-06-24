@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { TrendingUp, TrendingDown } from 'lucide-react'
 import { formatCurrency, formatMarketCap, formatPercent } from '../utils/formatters'
 
@@ -6,11 +7,13 @@ import { formatCurrency, formatMarketCap, formatPercent } from '../utils/formatt
  */
 const CryptoCard = ({ coin, rank }) => {
   const isPositive = coin.price_change_percentage_24h >= 0
+  const navigate = useNavigate()
 
   return (
     <article
       id={`coin-card-${coin.id}`}
-      className="glass-card-hover p-5 cursor-default animate-slide-up"
+      onClick={() => navigate(`/coin/${coin.id}`)}
+      className="glass-card-hover p-5 cursor-pointer animate-slide-up"
     >
       {/* Header row */}
       <div className="flex items-start justify-between gap-3 mb-4">

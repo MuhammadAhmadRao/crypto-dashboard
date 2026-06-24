@@ -65,6 +65,36 @@ export const cryptoApi = {
   getGlobalData: () => apiClient.get('/global'),
 
   /**
+   * Fetch detailed data for a specific coin
+   * @param {string} id - the coin id
+   */
+  getCoinDetails: (id) => 
+    apiClient.get(`/coins/${id}`, {
+      params: {
+        localization: false,
+        tickers: false,
+        market_data: true,
+        community_data: false,
+        developer_data: false,
+        sparkline: false,
+      },
+    }),
+
+  /**
+   * Fetch historical market chart data
+   * @param {string} id - the coin id
+   * @param {string} days - '1', '7', '30', etc.
+   * @param {string} currency - vs_currency (default 'usd')
+   */
+  getCoinMarketChart: (id, days, currency = 'usd') =>
+    apiClient.get(`/coins/${id}/market_chart`, {
+      params: {
+        vs_currency: currency,
+        days: days,
+      },
+    }),
+
+  /**
    * Ping CoinGecko API
    */
   ping: () => apiClient.get('/ping'),
