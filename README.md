@@ -14,7 +14,7 @@
 **A professional, real-time cryptocurrency price tracker with a stunning glassmorphism UI.**  
 Track the top 20 cryptocurrencies with live prices, market caps, and 24-hour changes.
 
-[Live Demo](#) · [Report Bug](https://github.com/yourusername/crypto-dashboard/issues) · [Request Feature](https://github.com/yourusername/crypto-dashboard/issues)
+[Live Demo](#) · [Report Bug](https://github.com/MuhammadAhmadRao/crypto-dashboard/issues) · [Request Feature](https://github.com/MuhammadAhmadRao/crypto-dashboard/issues)
 
 </div>
 
@@ -38,8 +38,6 @@ Track the top 20 cryptocurrencies with live prices, market caps, and 24-hour cha
 ---
 
 ## 📸 Screenshots
-
-> _Add screenshots after running the app locally._
 
 | Light Mode | Dark Mode |
 |---|---|
@@ -118,7 +116,7 @@ crypto-dashboard/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/crypto-dashboard.git
+git clone https://github.com/MuhammadAhmadRao/crypto-dashboard.git
 cd crypto-dashboard
 ```
 
@@ -197,7 +195,7 @@ netlify deploy --prod --dir=dist
 
 ```bash
 # 1. Add homepage to package.json
-#    "homepage": "https://yourusername.github.io/crypto-dashboard"
+#    "homepage": "https://MuhammadAhmadRao.github.io/crypto-dashboard"
 
 # 2. Install gh-pages
 npm install --save-dev gh-pages
@@ -291,6 +289,6 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 
 **Made with ❤️ — Star ⭐ this repo if you found it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/crypto-dashboard?style=social)](https://github.com/yourusername/crypto-dashboard)
+[![GitHub stars](https://img.shields.io/github/stars/MuhammadAhmadRao/crypto-dashboard?style=social)](https://github.com/MuhammadAhmadRao/crypto-dashboard)
 
 </div>
